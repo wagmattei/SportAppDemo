@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.wagner.sportappdemo.VisualizaEventoScrollingActivity"
+    tools:showIn="@layout/activity_visualiza_evento_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Futebol"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:id="@+id/textViewEsporte"
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="15/12/2016 20:00 por Wagner Crispim"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/textViewDataHoraOrganizador"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Estação da Bola
+Rod. SC 401, KM 5 - Cacupé
+Florianópolis - SC"
+            android:drawableLeft="@drawable/ic_room_black_24px"
+            android:id="@+id/textViewLocal"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como Chegar"
+                android:id="@+id/button"
+                android:layout_weight="1"
+                style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Eu Vou"
+                android:id="@+id/buttonEuVou"
+                android:allowUndo="false"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_gravity="right"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            tools:listitem="@layout/lista_participantes" />
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
